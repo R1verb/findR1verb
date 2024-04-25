@@ -1,1 +1,47 @@
-
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #38725a; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    font-family: Arial, sans-serif;
+}
+.wrapper {
+    text-align: center;
+    padding-top: 20px; /* Отступ сверху от окна */
+}
+#copyText {
+    margin-bottom: 20px; /* Расстояние между текстом и изображением */
+}
+#copyLink {
+    color: #fff; /* Цвет ссылки */
+    text-decoration: none; /* Убрать подчеркивание ссылки */
+}
+#copyLink:hover {
+    text-decoration: underline; /* Подчеркивание ссылки при наведении */
+}
+#qrCode img {
+    width: 200px; /* Ширина QR-кода */
+    height: 200px; /* Высота QR-кода */
+}
+#logo {
+    width: 150px; /* Ширина фотографии */
+    height: auto; /* Автоматическая высота */
+    margin-bottom: 20px; /* Расстояние между фотографией и ссылкой */
+}
+#copyNotification {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 9999;
+}
