@@ -17,7 +17,6 @@ document.getElementById('shareButton').addEventListener('click', function() {
       navigator.share({
         url: window.location.href
       })
-      .then(() => console.log('Поделено успешно'))
       .catch((error) => console.error('Ошибка поделиться', error));
     } else {
       // Если функция navigator.share недоступна, предложите альтернативный способ поделиться
