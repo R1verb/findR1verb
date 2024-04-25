@@ -15,8 +15,6 @@ document.getElementById('copyLink').addEventListener('click', function(event) {
 document.getElementById('shareButton').addEventListener('click', function() {
     if (navigator.share) {
       navigator.share({
-        title: 'Заголовок вашего сайта',
-        text: 'Описание вашего сайта',
         url: window.location.href
       })
       .then(() => console.log('Поделено успешно'))
