@@ -34,6 +34,32 @@ body {
     height: auto; /* Автоматическая высота */
     margin-bottom: 20px; /* Расстояние между фотографией и ссылкой */
 }
+.button {
+    margin-top: 45px;
+}
+.linkToR1verb {
+    padding: 10px 15px;
+    background: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 10px;
+    color: #000;
+}
+.share {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: default;
+}
+#shareButton {
+    margin-top: 17px;
+}
+.shareImage {
+    max-width: 35px;
+    padding-top: 8px;
+    cursor: pointer;
+}
 #copyNotification {
     display: none;
     position: fixed;

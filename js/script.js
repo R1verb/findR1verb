@@ -11,3 +11,18 @@ document.getElementById('copyLink').addEventListener('click', function(event) {
         console.error('Не удалось скопировать текст: ', err);
     });
 });
+
+document.getElementById('shareButton').addEventListener('click', function() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Заголовок вашего сайта',
+        text: 'Описание вашего сайта',
+        url: window.location.href
+      })
+      .then(() => console.log('Поделено успешно'))
+      .catch((error) => console.error('Ошибка поделиться', error));
+    } else {
+      // Если функция navigator.share недоступна, предложите альтернативный способ поделиться
+      alert('К сожалению, ваш браузер не поддерживает функцию поделиться. Вы можете скопировать ссылку и отправить ее вручную.');
+    }
+  });
