@@ -15,6 +15,7 @@ document.getElementById('copyLink').addEventListener('click', function(event) {
 document.getElementById('shareButton').addEventListener('click', function() {
     if (navigator.share) {
       navigator.share({
+        title: 'Find R1verb'
         url: window.location.href
       })
       .catch((error) => console.error('Ошибка поделиться', error));
